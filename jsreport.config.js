@@ -9,7 +9,7 @@ module.exports = {
         provider: { type: 'string', enum: ['aws-s3-storage'] }
       }
     },
-    extensions: {     
+    extensions: {
       'aws-s3-storage': {
         type: 'object',
         properties: {
