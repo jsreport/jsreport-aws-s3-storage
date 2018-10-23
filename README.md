@@ -1,3 +1,4 @@
+
 # jsreport-aws-s3-storage
 [![NPM Version](http://img.shields.io/npm/v/jsreport-aws-s3-storage.svg?style=flat-square)](https://npmjs.com/package/jsreport-aws-s3-storage)
 [![Build Status](https://travis-ci.org/jsreport/jsreport-aws-s3-storage.png?branch=master)](https://travis-ci.org/jsreport/jsreport-aws-s3-storage)
@@ -13,32 +14,30 @@ Some of the jsreport extensions requires a blob storage for storing binary objec
 ## Configuration
 
 Required options are:
-- `accountName`:  azure blob storage account name
-- `accountKey`:  azure blob storage account key
+- `accessKeyId`
+- `secretAccessKey`
+- `bucket`
 
 Optionally you can set
-- `container`: azure blob storage container, this defaults to jsreport
+- `s3Options`: azure blob storage container, this defaults to jsreport
 
-You can pass these options into jsreport in following ways:
-
-- Through global `blobStorage` options
 ```js
 {
 	"blobStorage": {  
-		"provider": "azure-storage"
+		"provider": "aws-s3-storage"
 	},
 	"extensions": {
-		"azure-storage": {
-			"accountName": "...",
-			"accountKey": "...",
-			"container": "..."
+		"aws-s3-storage": {
+			"accessKeyId": "...",
+			"secretAccessKey": "...",
+			"bucket": "...",
+			"s3Options": {...}
 		}
 	}
 }
 ```
-
-- Pass options directly when using jsreport-core manually
+## jsreport-core
 ```js
-var jsreport = require('jsreport-core')({ blobStorage: { provider: 'azure-storage' } })
-jsreport.use(require('jsreport-azure-storage')({}))
+var jsreport = require('jsreport-core')({ blobStorage: { provider: 'aws-s3-storage' } })
+jsreport.use(require('jsreport-aws-s3-storage')({...}))
 ```

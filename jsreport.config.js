@@ -1,23 +1,17 @@
 module.exports = {
-  name: 'fs-store-aws-s3-persistence',
+  name: 'aws-s3-storage',
   main: 'lib/main.js',
-  dependencies: ['templates', 'fs-store'],
+  dependencies: [],
   optionsSchema: {
-    extensions: {
-      'fs-store': {
+    blobStorage: {
+      type: 'object',
+      properties: {
+        provider: { type: 'string', enum: ['aws-s3-storage'] }
+      }
+    },
+    extensions: {     
+      'aws-s3-storage': {
         type: 'object',
-        properties: {
-          persistence: {
-            type: 'object',
-            properties: {
-              provider: { type: 'string', enum: ['aws-s3'] }
-            }
-          }
-        }
-      },
-      'fs-store-aws-s3-persistence': {
-        type: 'object',
-        required: ['accessKeyId', 'secretAccessKey', 'bucket'],
         properties: {
           accessKeyId: { type: 'string' },
           secretAccessKey: { type: 'string' },
