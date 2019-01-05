@@ -1,4 +1,5 @@
 
+
 # jsreport-aws-s3-storage
 [![NPM Version](http://img.shields.io/npm/v/jsreport-aws-s3-storage.svg?style=flat-square)](https://npmjs.com/package/jsreport-aws-s3-storage)
 [![Build Status](https://travis-ci.org/jsreport/jsreport-aws-s3-storage.png?branch=master)](https://travis-ci.org/jsreport/jsreport-aws-s3-storage)
@@ -6,6 +7,13 @@
 > jsreport extension adding support for storing blobs in aws s3
 
 Some of the jsreport extensions requires a blob storage for storing binary objects. This implementation stores these objects like output reports inside cost effective aws s3.
+
+See the blob sorages general documentation
+https://jsreport.net/learn/blob-storages
+
+See how to persist jsreport output reports
+https://jsreport.net/learn/reports
+
 
 ## Installation
 
