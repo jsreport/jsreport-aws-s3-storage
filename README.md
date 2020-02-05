@@ -21,10 +21,10 @@ https://jsreport.net/learn/reports
 
 ## Configuration
 
-Required options are:
-- `accessKeyId`
-- `secretAccessKey`
+Required options is:
 - `bucket`
+
+In case you want to use IAM role, don't pass accessKey and secretAccessKey.    
 
 Optionally you can set
 - `s3Options`: azure blob storage container, this defaults to jsreport
