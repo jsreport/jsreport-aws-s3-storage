@@ -8,7 +8,7 @@
 
 Some of the jsreport extensions requires a blob storage for storing binary objects. This implementation stores these objects like output reports inside cost effective aws s3.
 
-See the blob sorages general documentation
+See the blob storages general documentation
 https://jsreport.net/learn/blob-storages
 
 See how to persist jsreport output reports
