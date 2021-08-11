@@ -27,7 +27,7 @@ Required options is:
 In case you want to use IAM role, don't pass accessKey and secretAccessKey.    
 
 Optionally you can set
-- `s3Options`: azure blob storage container, this defaults to jsreport
+- `s3Options`: options passed to [asws sdk s3 constructor](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#constructor-property)
 
 ```js
 {
