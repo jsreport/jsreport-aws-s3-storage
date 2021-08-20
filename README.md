@@ -1,4 +1,5 @@
-
+**⚠️ This repository has been moved to the monorepo [jsreport/jsreport](https://github.com/jsreport/jsreport) and to the npm `@jsreport/jsreport-aws-s3-storage` scope.**
+--
 
 # jsreport-aws-s3-storage
 [![NPM Version](http://img.shields.io/npm/v/jsreport-aws-s3-storage.svg?style=flat-square)](https://npmjs.com/package/jsreport-aws-s3-storage)
